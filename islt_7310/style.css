@@ -54,4 +54,74 @@ h1{
     background-color: lightblue;
 }
 
-/* about */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px; 
+    }
+
+    header h2 {
+        font-size: 18px; 
+    }
+
+    .first-bold {
+        font-size: 16px; 
+    }
+
+    .indented-paragraph {
+        font-size: 14px;
+    }
+
+   
+    img {
+        max-width: 100%; 
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+}
