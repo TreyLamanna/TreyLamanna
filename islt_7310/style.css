@@ -1,5 +1,5 @@
 h1{
-    color: maroon;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* about */
@@ -11,7 +11,7 @@ h1{
     background-color: rgb(255, 158, 158); 
     color: #fff;
     padding: 15px 30px;
-    margin: 20px; 
+    margin: 40px; 
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -48,6 +48,9 @@ h1{
     border: 2px solid red; 
     color: black;
     text-align: center;
+}
+.pic{
+    margin: 30px;
 }
 
 .backG{
@@ -124,4 +127,67 @@ h1{
         display: block;
     }
 
+}
+
+
+@media print {
+    /* a. Your Name (h1) */
+    h1 {
+      color: black;
+      font-family: serif; 
+    }
+  
+    /* b. Your description about yourself (p) */
+    p {
+      color: black;
+      font-family: serif;
+    }
+  
+    /* d. Your Education Details (ul or ol) */
+    ul, ol {
+      color: black;
+      font-family: serif;
+    }
+  
+    /* e. Your Quote (blockquote) */
+    blockquote {
+      color: black;
+      font-family: serif;
+    }
+  
+    /* f. Your Footer (contact information without any logo or icons) */
+    footer {
+      color: black;
+      font-family: serif;
+    }
+  
+    /* g. Make all font Black (already specified in individual elements) */
+    body, h1, p, ul, ol, blockquote, footer {
+        color: black !important;
+    }
+  
+    /* h. Serif font (already specified in individual elements) */
+    body, h1, p, ul, ol, blockquote, footer {
+        font-family: serif !important;
+    }
+  
+    /* i. Make sure your 1 element using your custom font prints the custom font! */
+    h1 {
+        font-family: 'CustomFont', sans-serif; 
+    }
+  
+    /* j. Adjust the printable margins to be 1" on all sides */
+    body {
+      margin: 1in;
+    }
+  }
+
+.footer-icon {
+    font-size: 16px;
+    display: inline-block;
+    transition: transform 0.2s ease; 
+}
+
+.footer-icon:hover {
+    transform: scale(1.1); 
 }
