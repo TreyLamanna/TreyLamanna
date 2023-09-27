@@ -232,3 +232,13 @@ p {
     }
 
 }
+
+.footer-icon {
+    font-size: 16px;
+    display: inline-block;
+    transition: transform 0.2s ease; 
+}
+
+.footer-icon:hover {
+    transform: scale(1.1); 
+}
