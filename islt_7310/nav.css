@@ -238,3 +238,22 @@ p {
     }
 
 }
+
+.footer-icon {
+    font-size: 16px;
+    display: inline-block;
+    transition: transform 0.2s ease; 
+}
+
+.footer-icon:hover {
+    transform: scale(1.1); 
+}
+
+.foot-bar {
+    background-image: url('BackFoot.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: black; 
+    text-align: center; 
+    padding: 20px; 
+}
