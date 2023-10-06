@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Info</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class = "backG">
+    <header>
+        <h1 class="top-bar">Contact Page</h1>
+    </header>   
+
+    <nav>
+        <div class="button-container">
+            <div class="dropdown">
+            <button class="custom-button"><a href="index.html">Home</a></button>
+            <button class="custom-button"><a href="about.html">About</a></button>
+            <button class="custom-button"><a href="reflection.html">Reflection</a></button>
+            <button class="custom-button"><a href="contact.html">Contact</a></button>
+            <button class="custom-button"><a href="project.html">Project/Learn</a></button>
+            </div>
+        </div>
+    </nav> 
+
+    
+
+    <!-- Main Content Section-->
+    <div class="mid-bar">
+        <h1>Contact Us</h1>
+
+    <form action="submit.php" method="POST">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required>
+
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br>
+
+        <input type="submit" value="Send">
+    </form>
+</div>
+
+    <footer class="foot-bar">
+        <p>Copyright 2023; Trey Lamanna<br> <img src="Email.png" width="20" height="20"> <span class="footer-icon">treylamanna@gmail.com   </span>  <br> <img src="Phone_icon.png" width="20" height="20"> <span class="footer-icon">901-343-2750</span></p>
+    </footer>
+
+
+
+</body>
+</html>
