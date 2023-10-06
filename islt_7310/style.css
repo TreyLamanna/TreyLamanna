@@ -136,7 +136,10 @@ h1{
     .dropdown:hover .dropdown-content {
         display: block;
     }
-
+    
+    table {
+        font-size: 0.8rem;
+    }
 }
 
 
@@ -275,4 +278,61 @@ h1{
 .imageP {
     flex: 1; /* Take up available space (right side) */
     text-align: center; /* Align the image to the right */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Increase this value to add more space between labels and input fields */
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 20px; /* Increase this value to add more space between input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Style the table caption */
+caption {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Style the table header cells */
+thead th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style the table data rows */
+tbody tr:nth-child(odd) {
+    background-color: rgb(255, 158, 158);
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+/* Add a border around the table */
+table, th, td {
+    border: 1px solid #ddd;
 }
