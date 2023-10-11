@@ -1,3 +1,32 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: static;
+    background-color: lightblue;
+    min-width: 160px;
+    z-index: 1;
+    
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    clear: both;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 70%; /* Position below the button */
+    left: 15%;
+}
+
+
 h1{
     font-family: 'Open Sans', sans-serif;
 }
@@ -67,6 +96,10 @@ h1{
     background-color: lightblue;
 }
 
+.backG2{
+    background-color: grey;
+}
+
 @media screen and (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -120,21 +153,25 @@ h1{
     
     .dropdown-content {
         display: none;
-        position: absolute;
-        background-color: #f9f9f9;
+        position: static;
+        background-color: lightblue;
         min-width: 160px;
         z-index: 1;
+        
     }
     
     .dropdown-content a {
-        display: block;
-        padding: 10px;
+        padding: 12px 16px;
         text-decoration: none;
-        color: #333;
+        display: block;
+        clear: both;
     }
     
     .dropdown:hover .dropdown-content {
         display: block;
+        position: absolute;
+        top: 100%; /* Position below the button */
+        left: 15%;
     }
     
     table {
